@@ -1,0 +1,45 @@
+.flex-container{
+    display: flex;
+    
+}
+.firstBox{
+     width: 70%;
+     height: 100vh;
+     display: flex;
+     background-color: rgb(210, 218, 218);
+}
+.secondBox{
+    width: 30%;
+    height: 100vh;
+    background-color: brown;
+}
+h3.webLink{
+    color: white;
+    padding-left: 30px;
+    padding-top: 20px;
+
+}
+input[type=email]{
+    width: 30px;
+}
+.firstBox .LoginDisplay{
+      
+    align-self: center;
+   padding-top: 10%;
+    width: 900px;
+   
+    height: 500px;
+}
+.hrContainer{
+    width: 500px;
+    margin-top: 40px;
+}
+.HrStyling{
+    display: flex;
+}
+  
+hr{
+    width: 250px;
+    margin-left: 40px;
+    margin-right: 40px;
+}

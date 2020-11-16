@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Login from './Component/Login/Login.js';
 function App() {
   return (
     <div >
-    
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-success">Success</button>
+            
+      <Login/>
         
     </div>
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -18,10 +18,10 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
   },
   margin: {
-    margin: theme.spacing(1),
+    margin: theme.spacing(2),
   },
   withoutLabel: {
-    marginTop: theme.spacing(3),
+    marginTop: theme.spacing(1),
   },
   textField: {
     width: '25ch',
@@ -37,7 +37,8 @@ export default function LoginForm() {
     weightRange: '',
     showPassword: false,
   });
-
+  const [email,setEmail]=useState("");
+    
   const handleChange = (prop) => (event) => {
     setValues({ ...values, [prop]: event.target.value });
   };
@@ -46,16 +47,16 @@ export default function LoginForm() {
   return (
     <div className={classes.root}>
       <div>
-         <from>
+         <form>
          <FormControl fullWidth className={classes.margin} variant="outlined">
-          <InputLabel htmlFor="outlined-adornment-amount">Password</InputLabel>
+          <InputLabel htmlFor="outlined-adornment-amount">Email</InputLabel>
           <OutlinedInput
-           type="password"
+           type="email"
             id="outlined-adornment-amount"
-            value={values.amount}
-            onChange={handleChange('amount')}
-            startAdornment={<InputAdornment position="start"><LockIcon style={{color:"red"}}></LockIcon></InputAdornment>}
-            labelWidth={60}
+            value={email}
+            onChange={(e)=>setEmail(e.target.value)}
+            startAdornment={<InputAdornment position="start"><MailIcon style={{color:"red"}}></MailIcon></InputAdornment>}
+            labelWidth={40}
           />
         </FormControl>    
         <FormControl fullWidth className={classes.margin} variant="outlined">
@@ -66,7 +67,7 @@ export default function LoginForm() {
             value={values.amount}
             onChange={handleChange('amount')}
             startAdornment={<InputAdornment position="start"><LockIcon style={{color:"red"}}></LockIcon></InputAdornment>}
-            labelWidth={60}
+            labelWidth={70}
           />
         </FormControl>
         <div className="forgetAndPassword">
@@ -76,7 +77,7 @@ export default function LoginForm() {
         <Button variant="contained" color="primary">
              Login
        </Button>
-        </from>
+        </form>
 
       </div>
     </div>

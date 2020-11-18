@@ -1,0 +1,57 @@
+.MainContiner{
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+}
+.col1{
+    background-color: white;
+}
+.col2{
+    background-color: coral;
+}
+.row{
+    width: 100%;
+    height: 100vh;
+    margin-left: 0px;
+}
+.centralize{
+    margin-left: 10%;
+     margin-top: 30%;
+     
+}
+.hrContainer{
+    width: 70%;
+    margin-top: 40px;
+}
+.HrStyling{
+    display: flex;
+    
+}
+  
+hr{
+    width:50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-color: black;
+}
+.scanningContainer{
+    display: flex;
+    justify-content: center;
+}
+.scanningBtn{
+      margin-top: 10px;
+}
+@media (max-width:992px){
+    .scanningContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .scanningBtn{
+          margin-top: 10px;
+    }
+    .scanningDescription{
+         margin-left: 15%;
+    }
+    
+}

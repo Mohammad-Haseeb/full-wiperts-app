@@ -1,40 +1,39 @@
+import { Button } from '@material-ui/core';
 import React from 'react';
-import './Login.css';
+import './login.css';
 import LoginForm from './LoginForm';
-import Button from '@material-ui/core/Button';
+import logo from './loginImage.jpg';
+
 export default function Login(){
     return(
-       <div >
-           <div className="flex-container">
-                <div className="firstBox">
-                    <h3 className="webLink">Wipeets.Com</h3>
-                      <div className="LoginDisplay">
-                          <h3>Login</h3>
-                          <div className="login">
-                           <LoginForm/>
-                           </div>
-                           <div className="hrContainer">
+        <>
+         <div className="MainContiner">
+       
+              <div class="row">
+                 <div class="col-sm-8  col1">
+                    <h4 style={{marginTop:"10px" ,marginLeft:"10px"}}> Wiperts.Com</h4>
+                     <div className="centralize"> 
+                        Login
+                        <LoginForm/>
+                        <div className="hrContainer">
                                <div className="HrStyling">
                                    <hr/>
                                    <p>or</p>
                                    <hr/>
                                </div>
-                               <div className="ScannningDescription">
-                                   <p className="scanning">You can aslo start scanning you data</p>
-                                   <Button variant="outlined" className="scanningbtn" style={{backgroundColor:"greenyellow"}}>
-                                        Secondary
-                                     </Button>
-
-                               </div>
-                            </div>
-
-                         </div>
-
-                </div>
-                 <div className="secondBox">
-                     
-                 </div>
-            </div>
-       </div>
-    ); 
+                           </div> 
+                           <div className="scanningContainer">
+                               <h6 className="scanningDescription">You can aslo start scanning your data.</h6>
+                               <Button className="scanningBtn" style={{marginTop:"-08px",marginRight:"25%",marginLeft:"10px"}}>Start scanning</Button>
+                               </div>   
+                      </div> 
+                   </div>
+                  <div class="col-sm-4   col2">
+                    oiughkjh
+                  </div>
+             
+               </div>
+         </div>
+        </>
+    );
 }

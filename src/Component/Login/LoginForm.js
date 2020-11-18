@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexWrap: 'wrap',
+    width:"80%",
   },
   margin: {
     margin: theme.spacing(2),
@@ -24,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
   },
   textField: {
-    width: '25ch',
+    width: '15ch',
   },
 }));
 
@@ -47,6 +48,7 @@ export default function LoginForm() {
   return (
     <div className={classes.root}>
       <div>
+        
          <form>
          <FormControl fullWidth className={classes.margin} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-amount">Email</InputLabel>

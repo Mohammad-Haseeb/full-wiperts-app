@@ -3,13 +3,12 @@ import React,{useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import OutlinedInput from '@material-ui/core/OutlinedInput';
-import InputLabel from '@material-ui/core/InputLabel';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import MailIcon from '@material-ui/icons/Mail';
 import FormControl from '@material-ui/core/FormControl';
-import LockIcon from '@material-ui/icons/Lock';
-import './Form.css';
-import Check from './CheckBox'
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -29,10 +28,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function LoginForm() {
+export default function ForgetPasswordForm() {
   const classes = useStyles();
-  const [values, setValues] = React.useState("");
-  const [email,setEmail]=useState("");
+  const [values, setValues] = useState("");
+ 
     
   const handleChange = (prop) => (event) => {
     setValues(event.target.value );
@@ -43,39 +42,31 @@ export default function LoginForm() {
   return (
     <div className={classes.root}>
       <div>
-        
+          <div style={{marginLeft:"20px"}}>
+             <h3>Forget password</h3>
+              <p>Please,enter your  email address so we can send you a link for password reset</p>
+          </div>
          <form>
          <FormControl fullWidth className={classes.margin} variant="outlined">
-          <OutlinedInput
-           type="email"
-            id="outlined-adornment-amount"
-            value={email}
-            placeholder="Enter Email Address"
-            onChange={(e)=>setEmail(e.target.value)}
-            startAdornment={<InputAdornment position="start"><MailIcon style={{color:"#02C873"}}></MailIcon></InputAdornment>}
-            labelWidth={0}
-            required
-          />
-        </FormControl>    
-        <FormControl fullWidth className={classes.margin} variant="outlined">
           <OutlinedInput
            type="password"
             id="outlined-adornment"
             value={values.amount}
             placeholder="Enter Password"
             onChange={handleChange('amount')}
-            startAdornment={<InputAdornment position="start"><LockIcon style={{color:"#02C873"}}></LockIcon></InputAdornment>}
+            startAdornment={<InputAdornment position="start"><MailIcon style={{color:"#02C873"}}></MailIcon></InputAdornment>}
             labelWidth={0}
             required
           />
         </FormControl>
-        <div className="forgetAndPassword">
-            <div><Check/></div>
-            <div><Button>Forget Password?</Button></div>
-        </div>
-        <Button variant="contained" style={{backgroundColor:"#02C873",marginLeft:"3%"}}>
-             Login
+       
+        <Button variant="contained" style={{backgroundColor:"#02C873",marginLeft:"3%" , marginTop:"10px"}}>
+             Confirm
        </Button>
+       <div className="forgetAndPassword">
+            
+            <div><Button><ArrowBackIcon style={{color:"#02C873" ,marginRight:"10px", marginTop:"20px"}} fontSize="large" ></ArrowBackIcon>Back to Log In Screen</Button></div>
+        </div>
         </form>
 
       </div>

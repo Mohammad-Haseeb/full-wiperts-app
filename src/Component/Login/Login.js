@@ -9,11 +9,11 @@ export default function Login(){
         <>
          <div className="MainContiner">
        
-              <div class="row">
-                 <div class="col-sm-8  col1">
-                    <h4 style={{marginTop:"10px" ,marginLeft:"10px"}}> Wiperts.Com</h4>
+              <div className="row">
+                 <div className="col-sm-8  col1">
+                    <h4 className="link"> Wiperts.Com</h4>
                      <div className="centralize"> 
-                        Login
+                       <h3 style={{marginLeft:"4%"}}>Login</h3>
                         <LoginForm/>
                         <div className="hrContainer">
                                <div className="HrStyling">
@@ -24,12 +24,12 @@ export default function Login(){
                            </div> 
                            <div className="scanningContainer">
                                <h6 className="scanningDescription">You can aslo start scanning your data.</h6>
-                               <Button className="scanningBtn" style={{marginTop:"-08px",marginRight:"25%",marginLeft:"10px"}}>Start scanning</Button>
+                               <Button variant="outlined" color="primary" className="scanningBtn" >Start scanning</Button>
                                </div>   
                       </div> 
                    </div>
-                  <div class="col-sm-4   col2">
-                    oiughkjh
+                  <div className="col-sm-4   col2">
+                     <img src={logo} className="secondboxImage" alt="img"/>
                   </div>
              
                </div>

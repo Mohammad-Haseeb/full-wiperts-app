@@ -3,13 +3,10 @@ import React,{useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import OutlinedInput from '@material-ui/core/OutlinedInput';
-import InputLabel from '@material-ui/core/InputLabel';
 import InputAdornment from '@material-ui/core/InputAdornment';
-import MailIcon from '@material-ui/icons/Mail';
 import FormControl from '@material-ui/core/FormControl';
 import LockIcon from '@material-ui/icons/Lock';
-import './Form.css';
-import Check from './CheckBox'
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -29,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function LoginForm() {
+export default function  NewPasswordEnterance() {
   const classes = useStyles();
   const [values, setValues] = React.useState("");
   const [email,setEmail]=useState("");
@@ -43,16 +40,17 @@ export default function LoginForm() {
   return (
     <div className={classes.root}>
       <div>
-        
+           <h2>Password Recovery</h2>
+           <p>Please,enter your new password</p>
          <form>
          <FormControl fullWidth className={classes.margin} variant="outlined">
           <OutlinedInput
            type="email"
             id="outlined-adornment-amount"
             value={email}
-            placeholder="Enter Email Address"
+            placeholder="Enter your new password"
             onChange={(e)=>setEmail(e.target.value)}
-            startAdornment={<InputAdornment position="start"><MailIcon style={{color:"#02C873"}}></MailIcon></InputAdornment>}
+            startAdornment={<InputAdornment position="start"><LockIcon style={{color:"#02C873"}}></LockIcon></InputAdornment>}
             labelWidth={0}
             required
           />
@@ -62,19 +60,16 @@ export default function LoginForm() {
            type="password"
             id="outlined-adornment"
             value={values.amount}
-            placeholder="Enter Password"
+            placeholder="COnfirm your new password"
             onChange={handleChange('amount')}
             startAdornment={<InputAdornment position="start"><LockIcon style={{color:"#02C873"}}></LockIcon></InputAdornment>}
             labelWidth={0}
             required
           />
         </FormControl>
-        <div className="forgetAndPassword">
-            <div><Check/></div>
-            <div><Button>Forget Password?</Button></div>
-        </div>
+        
         <Button variant="contained" style={{backgroundColor:"#02C873",marginLeft:"3%"}}>
-             Login
+             Confirm
        </Button>
         </form>
 

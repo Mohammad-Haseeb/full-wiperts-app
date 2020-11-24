@@ -30,7 +30,7 @@
 .hrContainer{
     width: 70%;
     margin-top: 40px;
-    margin-left: 2%;
+    margin-left: 15%;
 }
 .HrStyling{
     display: flex;
@@ -50,12 +50,13 @@ hr{
 }
 .scanningContainer{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width:  90% !important;
 }
 .scanningBtn{
-      margin-top: -07px !important;
+      margin-top: 0px !important;
       border-radius: 50px !important;
+      
       
 }
 img.secondboxImage{

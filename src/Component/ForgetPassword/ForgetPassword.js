@@ -1,20 +1,16 @@
-import { Button } from '@material-ui/core';
 import React from 'react';
 import './forgetPassword.css';
-import ForgetPasswordForm  from './ForgetForm';
 import logo from '../Login/loginImage.jpg';
-import RecoveryMessage from './RecoveryMessage';
-import NewPasswordEnterance from './NewPassword';
 import { Outlet } from 'react-router-dom';
 
-export default function ForgetPassword(){
+export default function MainLoginSystem(){
     return(
         <>
          <div className="MainContiner">
        
               <div className="row">
                  <div className="col-sm-8  col1">
-                 <h4 className="link"> Wiperts.Com</h4>
+                 <h4 className="link"> WIPERTS.COM</h4>
                  <div className="centralize">
                      {/* <ForgetPasswordForm/> */}
                      {/* <RecoveryMessage/> */}

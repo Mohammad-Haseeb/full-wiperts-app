@@ -10,13 +10,14 @@ import  NewPasswordEnterance from './Component/ForgetPassword/NewPassword';
 import SuccessfullyMessage from  './Component/ForgetPassword/ChangeSuccessfuly';
 import LoginForm from './Component/Login/LoginForm';
 
+import NavHead,{BodyFoot} from './Component/Header';
+import Home from './Component/Home/Home';
+
 export default function App() {
-  let Home=()=>{
-    return(
-      <h1>Hello Home</h1>
-    );
-  }
+  
   return (
+    <>
+    
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="user" element={<MainLoginSystem />}>
@@ -31,5 +32,6 @@ export default function App() {
          
        </Route>
     </Routes>
+    </>
   );
 }

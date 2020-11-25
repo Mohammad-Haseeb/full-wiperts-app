@@ -43,8 +43,8 @@ export default function ForgetPasswordForm() {
     <div className={classes.root}>
       <div>
           <div style={{marginLeft:"20px"}}>
-             <h3>Forget password</h3>
-              <p>Please,enter your  email address so we can send you a link for password reset</p>
+             <h3 style={{fontWeight:"bold",fontFamily:"Source Sans Pro" }}>Forget password</h3>
+              <p style={{fontFamily:"Source Sans Pro",}}>Please,enter your  email address so we can send you a link for password reset</p>
           </div>
          <form>
          <FormControl fullWidth className={classes.margin} variant="outlined">
@@ -60,12 +60,12 @@ export default function ForgetPasswordForm() {
           />
         </FormControl>
        
-        <Button variant="contained" style={{backgroundColor:"#02C873",marginLeft:"3%" , marginTop:"10px"}}>
+        <Button variant="contained" style={{backgroundColor:"#02C873",marginLeft:"3%" , marginTop:"10px", height:"56px", width:"110px",color:"white",textTransform:"capitalize"}}>
              Confirm
        </Button>
        <div className="forgetAndPassword">
             
-            <div><Button><ArrowBackIcon style={{color:"#02C873" ,marginRight:"10px", marginTop:"20px"}} fontSize="large" ></ArrowBackIcon>Back to Log In Screen</Button></div>
+            <div><Button><ArrowBackIcon style={{color:"#02C873" ,marginRight:"05px", marginTop:"20px",paddingBottom:"13px"}} fontSize="large" ></ArrowBackIcon>Back to Log In Screen</Button></div>
         </div>
         </form>
 

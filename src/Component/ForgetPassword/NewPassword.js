@@ -40,8 +40,8 @@ export default function  NewPasswordEnterance() {
   return (
     <div className={classes.root}>
       <div>
-           <h2>Password Recovery</h2>
-           <p>Please,enter your new password</p>
+           <h2 style={{marginLeft:"15px", fontFamily:"Source Sans Pro" ,lineHeight:"35.2px",style:"normal",fontWeight:"660px",size:"28px" }}>Password Recovery</h2>
+           <p style={{marginLeft:"15px",fontFamily:"Source Sans Pro",fontWeight:"400px",lineHeight:"17.6px"}}>Please,enter your new password</p>
          <form>
          <FormControl fullWidth className={classes.margin} variant="outlined">
           <OutlinedInput
@@ -68,7 +68,7 @@ export default function  NewPasswordEnterance() {
           />
         </FormControl>
         
-        <Button variant="contained" style={{backgroundColor:"#02C873",marginLeft:"3%"}}>
+        <Button variant="contained" style={{backgroundColor:"#02C873",marginLeft:"3%",width:"110px",height:"56px",textTransform:"capitalize",marginTop:"30px"}}>
              Confirm
        </Button>
         </form>

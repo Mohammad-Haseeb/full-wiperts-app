@@ -3,7 +3,7 @@
     margin: 0px;
     background-color: turquoise;
     height: 94vh;
-    background-image: url('../Login/loginImage.jpg');
+    background-image: url('../Home/images/HomePageImages/formBackground.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -69,34 +69,275 @@ text-align: center;
 color: #484848;
 opacity: 0.45;
 }
-.cent{
-    height: 300px;
+.flexConatianer{
+    display: flex;
+    justify-content: center;
+     
+    flex-wrap: wrap;
 }
-img.questionImages{
-   padding-left: 15%;
+.flexConatianer > div{
+    margin-left: 10% ;
 }
 p.questionbrief{
-font-family: Source Sans Pro;
-margin-top: 10px;
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 23px;
-text-align: center;
+    font-family: Source Sans Pro;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    
+    color: #484848;
+    }
+    p.questionExplain{
+        margin-top: 20px;   
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        
+        
+        
+         color: #484848;
+        opacity: 0.45;
+        }
 
-color: #484848;
+
+
+.graphMainContainer{ 
+    /* background: linear-gradient(180deg, #FBF9FF 0%, rgba(249, 250, 254, 0) 100%); */
+    background-color: tomato;
+   width: 100%;
+   height: auto;
 }
-p.questionExplain{
-margin-top: 20px;   
+p.graphPara{
+
 font-family: Source Sans Pro;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
-line-height: 18px;
-text-align: center;
-
-/* Main- darck-color */
+line-height: 24px;
 
 color: #484848;
 opacity: 0.45;
+}
+.graphHeading{
+    font-family: Source Sans Pro;
+   
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 35px;
+
+
+
+color: #484848;
+}
+Button.graphbtn{
+    background-color: #02c873 ;
+    text-transform: capitalize;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+
+
+color: #FFFFFF;
+}
+
+.prizeContainer{
+    background-image: url("./images/HomePageImages/prizeBg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+font-family: Source Sans Pro;
+    
+    height: auto;
+
+}  
+.prizeHeading{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 35px;
+text-align: center;
+padding-top: 20px;
+color: #FFFFFF;
+
+}
+.prizeDes{
+ font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+
+line-height: 24px;
+color: #FFFFFF;
+text-align: center;
+opacity: 0.54;
+}
+.btnfelx{
+    display: flex;
+    justify-content: center;
+}
+.btnfelx > div{
+
+    margin: 10px;
+}
+button.prizebtn1{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+button.prizebtn2{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.prizebtn2:hover{
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    color: green;
+}
+.prizebtn1:hover{
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    color: green;
+    
+}
+.prizebox-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.prizebox-flex>div{
+    margin:10px
+}
+.prizebox-flex > .box2{
+    background: black;
+    opacity: 0.8;
+    border-radius: 23px;
+    width: 20%;
+}
+
+.prizebox-flex > .box1{
+    color: white;
+    font-size: 18px;
+    font-family: Source Sans Pro;
+    margin-left: 10%;
+line-height: 23px;
+align-self: center;
+} 
+.box2 > p {
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height */
+
+
+
+color: #FFFFFF
+
+}
+Button.prizebtnPerson{
+
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+margin:10%;
+margin-left: 15%;
+border-radius: 30px;
+color: white;
+font-family: Source Sans Pro;
+
+
+}
+.prizebox-flex > .box3{
+    background: black;
+    opacity: 0.8;
+    border-radius: 23px;
+    width: 20%;;
+}
+ 
+.box3 > p {
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height */
+
+
+
+color: #FFFFFF
+
+}
+.prizeLastDescip{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+margin: 0 auto;
+margin-bottom: 10px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+color: #FFFFFF;
+}
+.contactHeading{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 35px;
+text-align: center;
+margin-top: 05%;
+color: #484848;
+}
+.contactInfo{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    text-align: center;
+    
+    /* Main- darck-color */
+    
+    color: #484848;
+    opacity: 0.45;
+}
+@media screen and (max-width:630px){
+    .prizebox-flex{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       
+        align-items: center;
+    }  
+    .prizebox-flex > .box3{
+        width: 70% !important;
+    }
+    .prizebox-flex > .box2{
+        width: 70% !important;
+    }
 }

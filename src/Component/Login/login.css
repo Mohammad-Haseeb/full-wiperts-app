@@ -1,3 +1,4 @@
+
 .MainContiner{
     width: 100%;
     height: 100vh;
@@ -28,9 +29,9 @@
      
 }
 .hrContainer{
-    width: 70%;
+    width: 90%;
     margin-top: 40px;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 .HrStyling{
     display: flex;

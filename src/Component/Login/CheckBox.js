@@ -31,7 +31,7 @@ export default function Check() {
       
       <FormControlLabel
         control={<GreenCheckbox checked={state.checkedG} onChange={handleChange} name="checkedG" />}
-        label={<span style={{fontSize:"14px"}}>Remember Password</span>}
+        label={<span style={{fontSize:"14px",fontFamily:"Source Sans Pro",lineHeight:"18px",color:"#1B1B1B"}}>Remember Password</span>}
       />
      
     </FormGroup>

@@ -1,0 +1,43 @@
+.backImage{
+ background-image: url("./backgourndImage.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 94vh;
+}
+.touchHead{
+    padding-top: 20%;
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 38px;
+/* identical to box height, or 136% */
+
+
+/* White-color */
+
+color: #FFFFFF;
+
+}
+.DescriptionHead{
+    width: 40%;
+   margin-left: 30%;
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+text-align: center;
+
+/* White-color */
+
+color: #FFFFFF;
+opacity: 0.54;
+}
+button{
+    margin-left: 45%;
+    margin-top: 17%;
+}

@@ -1,37 +1,47 @@
 import React from 'react';
 import './footer.css'
+import {  Link } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 
 export default function NavHead(){
     return(
         <>
         
 <nav className="mb-0 navbar navbar-expand-lg navbar-dark info-color " style={{background:"linear-gradient(78.33deg, #034770 5.81%, #0F74B0 86.83%)"}} >
-  <a className="navbar-brand" href="#">Navbar</a>
+  <a className="navbar-brand" href="/">Navbar</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
     aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
   <div className="collapse navbar-collapse" id="navbarSupportedContent-4">
     <ul className="navbar-nav ml-auto">
-      <li className="nav-item active">
-        <a className="nav-link" href="#">Facebook
+    <li className="nav-item active">
+      <Link to="/" className="attach"><Button className="linkBtn" >Home</Button>
           <span className="sr-only">(current)</span>
-        </a>
+          </Link>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Instagram</a>
+      <li className="nav-item ">
+      <Link to="/FAQ" className="attach"><Button className="linkBtn" >FAQ</Button>
+          <span className="sr-only"></span>
+          </Link>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Login</a>
+      <li className="nav-item ">
+      <Link to="/About" className="attach"><Button className="linkBtn" >About</Button>
+          <span className="sr-only"></span>
+          </Link>
       </li>
-      <li className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false"> Profile </a>
-        <div className="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-          <a className="dropdown-item" href="#">My account</a>
-          <a className="dropdown-item" href="#">Log out</a>
-        </div>
+      <li className="nav-item ">
+      <Link to="/Contact" className="attach"><Button className="linkBtn" >Contact</Button>
+          <span className="sr-only"></span>
+          </Link>
       </li>
+      <li className="nav-item ">
+      <Link to="/user/login" className="attach"><Button className="linkBtn" >Log in</Button>
+          <span className="sr-only"></span>
+          </Link>
+      </li>
+  
+      
     </ul>
   </div>
 </nav>

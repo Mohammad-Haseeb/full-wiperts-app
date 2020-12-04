@@ -1,0 +1,88 @@
+.backImage{
+    background-image: url("../Contact/backgourndImage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.secondComponent{
+    margin-top: 30px;
+    background-image: url("./Untitled-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.secondComponentFlex{
+    padding-top: 20%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.mission{
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+
+}
+.missionSecondStatement{
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 35px;
+
+color: #484848;
+}
+
+.missionThirdStatement{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+
+/* Main- darck-color */
+
+color: #484848;
+opacity: 0.45;
+}
+.thirdComponent{
+    background: linear-gradient(180deg, #FBF9FF 0%, #F9FAFE 100%);
+    display: flex;
+    justify-content: centers;
+    flex-wrap: wrap;
+    padding-top:05%;
+    padding-bottom:05%;
+    padding-left:10%;
+
+}
+.thirdComponent div{
+    padding-left: 10%;
+}
+.forthComponent{
+    margin-top: 30px;
+    background-image: url("./Untitled-1\ \(1\).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.thirdComponentFlex{
+    padding-top: 10%;
+    padding-left: 60%;
+    display: flex;
+      
+      justify-content: flex-end;
+    flex-direction: column;
+}
+@media screen and (max-width:376px){
+    .thirdComponentFlex{
+        padding-left: 10px;
+    }
+
+}

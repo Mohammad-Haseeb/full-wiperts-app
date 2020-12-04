@@ -7,6 +7,8 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 import MailIcon from '@material-ui/icons/Mail';
 import FormControl from '@material-ui/core/FormControl';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import {  useNavigate } from "react-router-dom";
+
 
 
 
@@ -31,22 +33,26 @@ const useStyles = makeStyles((theme) => ({
 export default function ForgetPasswordForm() {
   const classes = useStyles();
   const [values, setValues] = useState("");
+  let navigate=useNavigate();
+
  
     
   const handleChange = (prop) => (event) => {
     setValues(event.target.value );
     console.log("Values : ",values)
   };
-
+    let Validate=()=>{
+      navigate("/user/RecoveryMessage");
+    }
   
   return (
     <div className={classes.root}>
       <div>
           <div style={{marginLeft:"20px"}}>
-             <h3 style={{fontWeight:"bold",fontFamily:"Source Sans Pro" }}>Forget password</h3>
-              <p style={{fontFamily:"Source Sans Pro",}}>Please,enter your  email address so we can send you a link for password reset</p>
+             <h3 style={{fontWeight:"600px",fontSize:"28px",lineHeight:"35px",color:"#484848",fontFamily:"Source Sans Pro" }}>Forget password</h3>
+              <p style={{fontFamily:"Source Sans Pro",color:"#484848",lineHeight:"18px",fontSize:"14px",fontWeight:"normal"}}>Please,enter your  email address so we can send you a link for password reset</p>
           </div>
-         <form>
+         <form onSubmit={Validate}>
          <FormControl fullWidth className={classes.margin} variant="outlined">
           <OutlinedInput
            type="password"
@@ -60,12 +66,12 @@ export default function ForgetPasswordForm() {
           />
         </FormControl>
        
-        <Button variant="contained" style={{backgroundColor:"#02C873",marginLeft:"3%" , marginTop:"10px", height:"56px", width:"110px",color:"white",textTransform:"capitalize"}}>
+        <Button variant="contained"  type="submit" style={{backgroundColor:"#02C873",marginLeft:"3%" , marginTop:"10px", height:"56px", width:"110px",color:"white",textTransform:"capitalize"}}>
              Confirm
        </Button>
        <div className="forgetAndPassword">
             
-            <div><Button><ArrowBackIcon style={{color:"#02C873" ,marginRight:"05px", marginTop:"20px",paddingBottom:"13px"}} fontSize="large" ></ArrowBackIcon>Back to Log In Screen</Button></div>
+            <div><Button onClick={()=>navigate("/user/login")}  style={{fontFamily:"Source Sans Pro",color:"#484848",lineHeight:"20px",fontWeight:"600px"}}><ArrowBackIcon style={{color:"#02C873" ,marginRight:"05px", marginTop:"20px",paddingBottom:"13px"}} fontSize="large" ></ArrowBackIcon>Back to Log In Screen</Button></div>
         </div>
         </form>
 

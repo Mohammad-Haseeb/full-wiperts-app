@@ -1,6 +1,6 @@
 import React from 'react';
 import './forgetPassword.css';
-import logo from '../Login/loginImage.jpg';
+import logo from '../Home/images/HomePageImages/loginPagelg.jpg';
 import { Outlet } from 'react-router-dom';
 
 export default function MainLoginSystem(){

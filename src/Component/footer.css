@@ -5,7 +5,7 @@
     background-position: center;
     background-size: cover;
     
-    height: 150px;
+    height: 30vh;
     
 }
 @media screen and (max-width: 767px) {
@@ -15,3 +15,18 @@
         
     }
   }
+  Button.linkBtn{
+      text-decoration: none;
+      color: #FFFFFF;
+      opacity: 0.7;
+      font-family: Source Sans Pro;
+      font-weight: bold;
+      margin-top: 4px;
+      text-transform: none;
+      border: 0px;
+  }
+  Button.linkBtn:active{
+      color: white;
+      border-color: white;
+  }
+

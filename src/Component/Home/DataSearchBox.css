@@ -13,11 +13,23 @@
     left: 50%;
     top: 86%;
 }
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    
+    font-family: Source Sans Pro;
+     color: #484848;
+     opacity: 0.5;
+  }
+  
+  select{ 
+    font-family: Source Sans Pro;
+     color: #484848;
+     
+  }
 p.firstdescription{
-    position: absolute;
+  
 width: 90%;
-left: 10%;
-top: 25%;
+margin-left: 10%;
+padding-top: 10%;
 
 font-family: Source Sans Pro;
 font-style: normal;
@@ -28,19 +40,25 @@ line-height: 35px;
 color: #FFFFFF;
 }
 .Forms{
-    position: absolute;
+    
 width: 60%;
 height: 56px;
 left: 05%;
-top: 33%;
+margin-top: 03% ;
 }
 @media screen and (max-width: 667px) {
     .Forms{
-        position: absolute;
+       
     width: 100%;
-    height: 50%;
+    height: 40%;
     left: 0%;
-    top: 37%;
+    margin-top: 0% !important;
+    }
+    .infobtn{
+        display: none;
+    }
+    .Container{
+        height: 98vh;
     }
 }
 h2.question{
@@ -107,8 +125,8 @@ p.questionbrief{
 
 
 .graphMainContainer{ 
-    /* background: linear-gradient(180deg, #FBF9FF 0%, rgba(249, 250, 254, 0) 100%); */
-    background-color: tomato;
+     background: linear-gradient(180deg, #FBF9FF 0%, rgba(249, 250, 254, 0) 100%); 
+   
    width: 100%;
    height: auto;
 }
@@ -225,7 +243,7 @@ color: #FFFFFF;
 .prizebox-flex{
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
 }
 .prizebox-flex>div{
     margin:10px
@@ -340,4 +358,68 @@ color: #484848;
     .prizebox-flex > .box2{
         width: 70% !important;
     }
+}
+.aboutContainer{
+    background-image: url("./images/HomePageImages/about\ us.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+font-family: Source Sans Pro;
+    color: white;
+   min-height: 250px;
+    
+
+} 
+
+.aboutUsDescription{
+    padding-top: 5%;
+    float: left;
+    width: 30%;
+    margin-left: 05%;
+
+}
+.addressLinkAboutcontainer{
+     float: right;
+}
+.addressLinkAboutcontainer > div{
+      display: inline-block;
+      padding-right: 40px;
+
+}
+.address {
+    padding-top: 5%;
+}
+@media screen and (max-width:673px){
+    .aboutContainer{
+       height:500px ;
+    } 
+}
+@media screen and (max-width:437px){
+    .aboutContainer{
+        height:830px ;
+     } 
+     .addressLinkAboutcontainer > div{
+         margin-left: 40% !important;
+     }
+     .aboutUsDescription{
+         margin-left:45% !important;
+         width: 50% !important;
+     }
+}
+.credits{
+    background: linear-gradient(78.33deg, #034770 5.81%, #0F74B0 86.83%);
+    color: white;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.privacy{
+    
+    color: teal;
+
+    
 }

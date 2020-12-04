@@ -19,9 +19,9 @@ export default function DataSearchBox(){
                   <Forms/>
               </div>
               <div className="infobtn">
-              <a href="#h" ><div style={{height:"35px",borderRadius:"30px",borderColor:"10px black",marginLeft:"30%",backgroundColor:"red",width:"25px"}}>
+              <a href="#h" ><div style={{height:"35px",borderRadius:"30px",borderColor:"10px black",marginLeft:"30%",backgroundColor:"#034770",width:"25px"}}>
                    <p style={{padding:"30%",color:"white"}}>0</p></div>
-                 <p style={{color:"white"}}>More Info</p>
+                 <h5 style={{color:"white",fontFamily:"Source Sans Pro",marginLeft:"25%",fontWeight:"bolder"}}>More Info</h5>
                    </a>
                    </div>
 
@@ -52,8 +52,46 @@ export default function DataSearchBox(){
             <Graph/>
              <QualityPrizePlan/> 
              <ContactSection/>
+             
+             <Homefoot/>
+             <div className="credits">
+                 <p>© 2020 Wiperts. All right reserved.</p>
+                 <p>Privacy Policy  Terms of Service</p>
+             </div>
        </>
    );
+}
+function Homefoot(){
+    return(
+        <>
+        <div className="aboutContainer">
+            <div className="aboutUsDescription">
+                   <h5 style={{color:"white",fontWeight:"bolder"}}>Wiperts.Com</h5> 
+                   <p>Privacy is becoming an increasingly rare commodity as the days go. If you do a brief online research you are likely to find that there is quite a lot of information about you.</p> 
+
+            </div>
+            <div class="addressLinkAboutcontainer">
+                <div>
+                    <p>Navigation</p>
+                    <p>Home</p>
+                    <p>About Us</p>
+                    <p>Blog</p>
+                    <p>Contact Us</p>
+               </div>
+               <div className="address">
+                   <p>Recent Posts</p>
+                   <p>Facebook Leaks Personal Information Agai,
+                        ~300<br/> Million Records Exposed</p>
+                  <p>March 14, 2020</p>
+                  <p>Data Breaches Result in Huge Costs</p>
+                  <p>January 31, 2020</p>
+
+
+               </div>
+            </div>
+        </div>
+        </>
+    )
 }
 
 function ContactSection(){
@@ -130,17 +168,19 @@ function Graph(){
     );
 }
 function Forms(){
+    var country_list = ["State","Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua &amp; Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia &amp; Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Cape Verde","Cayman Islands","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cruise Ship","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kuwait","Kyrgyz Republic","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Mauritania","Mauritius","Mexico","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Namibia","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","Norway","Oman","Pakistan","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre &amp; Miquelon","Samoa","San Marino","Satellite","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","South Africa","South Korea","Spain","Sri Lanka","St Kitts &amp; Nevis","St Lucia","St Vincent","St. Lucia","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad &amp; Tobago","Tunisia"
+    ,"Turkey","Turkmenistan","Turks &amp; Caicos","Uganda","Ukraine","United Arab Emirates","United Kingdom","Uruguay","Uzbekistan","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
     return(
         <>
 
 <form class="   p-5" >
 
-<p class="h4 mb-4">Sign up</p>
+
 
 <div class="form-row mb-4">
     <div class="col">
         
-        <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name"/>
+        <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder=" First name"/>
     </div>
     <div class="col">
         
@@ -153,32 +193,32 @@ function Forms(){
     <div class="form-group">
     
     <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
+    {
+        country_list.map((val,i)=>{
+        return <option className="op">{val}</option>
+         
+        })
+    }
+     
     </select>
   </div>
 
     </div>
     <div class="col">
     
-        <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name"/>
+        <input type="email" id="defaultRegisterFormLastName" class="form-control" placeholder="Email"/>
+
     </div>
 </div>
 <div class="form-row mb-1">
     <div class="col">
      
-       <button>
-         free Search
-      </button>
+    <Button variant="contained" className="graphbtn" style={{backgroundColor:"#02C873"}}>Free Search<ArrowForwardIcon style={{marginLeft:"10px"}}></ArrowForwardIcon></Button>
     </div>
     <div class="col">
       
-       <button>
-         View Price
-      </button>
+    <Button variant="contained" style={{backgroundColor:"#034770",color:"white",fontFamily:"Source Sans Pro"}}>View Prices</Button>
+
     </div>
 </div>
 

@@ -6,6 +6,8 @@ import OutlinedInput from '@material-ui/core/OutlinedInput';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import FormControl from '@material-ui/core/FormControl';
 import LockIcon from '@material-ui/icons/Lock';
+import {  useNavigate } from "react-router-dom";
+
 
 
 
@@ -30,19 +32,22 @@ export default function  NewPasswordEnterance() {
   const classes = useStyles();
   const [values, setValues] = React.useState("");
   const [email,setEmail]=useState("");
+  let navigate=useNavigate();
     
   const handleChange = (prop) => (event) => {
     setValues(event.target.value );
     console.log("Values : ",values)
   };
-
+    let Validate=()=>{
+      navigate("/user/RecoveryMessage");
+    }
   
   return (
     <div className={classes.root}>
       <div>
            <h2 style={{marginLeft:"15px", fontFamily:"Source Sans Pro" ,lineHeight:"35.2px",style:"normal",fontWeight:"660px",size:"28px" }}>Password Recovery</h2>
            <p style={{marginLeft:"15px",fontFamily:"Source Sans Pro",fontWeight:"400px",lineHeight:"17.6px"}}>Please,enter your new password</p>
-         <form>
+         <form onSubmit={Validate}>
          <FormControl fullWidth className={classes.margin} variant="outlined">
           <OutlinedInput
            type="email"
@@ -68,7 +73,7 @@ export default function  NewPasswordEnterance() {
           />
         </FormControl>
         
-        <Button variant="contained" style={{backgroundColor:"#02C873",marginLeft:"3%",width:"110px",height:"56px",textTransform:"capitalize",marginTop:"30px"}}>
+        <Button type="submit" onClick={()=>navigate("/user/RecoveryGreeting")} variant="contained" style={{backgroundColor:"#02C873",marginLeft:"3%",width:"110px",height:"56px",textTransform:"capitalize",marginTop:"30px"}}>
              Confirm
        </Button>
         </form>

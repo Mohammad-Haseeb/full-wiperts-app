@@ -1,0 +1,157 @@
+.root{
+    margin-top:30px;
+    border: 10px solid "#CICICI";
+     display: flex;
+    align-items: center;
+    width:30%;
+    margin-left: 36%;
+     
+}
+@media screen and (max-width:600px){
+    .root{
+        width: 80% !important;
+        margin-left: 10% !important;
+    }
+}
+@media screen and (max-width:910px){
+    .root{
+        width: 50%;
+        margin-left: 23%;
+    }
+}
+
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+div> img{
+    width: 120px;
+}
+.flexContainer > div{
+     margin-left: 10%;
+}
+@media screen and (max-width:599px){
+    .flexContainer >div{
+        margin-left: 10px !important;
+    }
+}
+@media screen and (max-width:419px){
+    .flexContainer >div{
+        margin-left: 30% !important;
+    }
+}
+.innerAccordiantext{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+
+color: #000000;
+opacity: 0.54;
+
+
+}
+.barFAQ{
+    
+width: 110px;
+height: 18px;
+margin-left: 25%;
+margin-top: 90px;
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+
+text-decoration-line: underline;
+
+color: #484848
+}
+.footImage{
+    background-image: url("./FAQImages/footImage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lastCOntainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.linkStylingFoot{
+    font-family: Source Sans Pro;
+    height: 42px;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 28px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+
+.descriptionFoot{
+    font-family: Source Sans Pro;
+font-style: normal;
+    height: 42px;
+
+font-weight: 500px;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.dateFoot{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 15px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+opacity: 0.5;
+}
+@media screen  and (max-width:"506px"){
+    .linkStylingFoot{
+        padding-left: 300px !important;
+    }
+}
+.headerSearchLinkStyle{
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 38px;
+text-decoration: none;
+/* identical to box height, or 190% */
+
+
+color: #484848;
+}
+.textSearchLinkStyle{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 20px;
+/* identical to box height */
+
+
+/* Main- darck-color */
+
+color: #484848;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import NavHead from '../Header.js'
+import NavHead,{BodyFoot} from '../Header.js'
 import DataSearchBox from './DataSearchBox.js'
 
 export default function Home(){
@@ -7,7 +7,7 @@ export default function Home(){
         <>
         <NavHead/>
         <DataSearchBox/>
-
+        
         </>
     );
 }

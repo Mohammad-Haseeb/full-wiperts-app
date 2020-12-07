@@ -8,7 +8,7 @@ export default function NavHead(){
         <>
         
 <nav className="mb-0 navbar navbar-expand-lg navbar-dark info-color " style={{background:"linear-gradient(78.33deg, #034770 5.81%, #0F74B0 86.83%)"}} >
-  <a className="navbar-brand" href="/">Navbar</a>
+  <a className="navbar-brand" href="/" style={{fontFamily:"Source Sans Pro",fontSize:"30px",fontWeight:"bolder"}}>Wiperts<span className="firstLogo">Removing your personal information online</span></a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
     aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>

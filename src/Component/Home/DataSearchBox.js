@@ -156,7 +156,7 @@ function Graph(){
         <Button variant="contained" className="graphbtn">Start scanning <ArrowForwardIcon style={{marginLeft:"10px"}}></ArrowForwardIcon></Button>
 </div>
 <div class="col-sm-12 col-md-6 grapghbox">
-    <img src={graphImage} style={{paddingTop:"1%",width:"90%",height:"80%"}} alt="grapg"/>
+    <img src={graphImage} style={{paddingTop:"10%",width:"90%",height:"60%"}} alt="grapg"/>
 
 </div>
 

@@ -125,10 +125,9 @@ p.questionbrief{
 
 
 .graphMainContainer{ 
-     background: linear-gradient(180deg, #FBF9FF 0%, rgba(249, 250, 254, 0) 100%); 
-   
+   background-color : #FBF9FF ;      
    width: 100%;
-   height: auto;
+   
 }
 p.graphPara{
 

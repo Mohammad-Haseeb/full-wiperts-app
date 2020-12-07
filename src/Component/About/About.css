@@ -22,9 +22,11 @@
 
 font-family: Source Sans Pro;
 font-style: normal;
-font-weight: 600;
-font-size: 16px;
+font-weight: bolder;
+font-size: 26px;
 line-height: 20px;
+color:  #034770;
+
 
 }
 .missionSecondStatement{
@@ -85,4 +87,58 @@ opacity: 0.45;
         padding-left: 10px;
     }
 
+}
+.p1{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    
+    color: #FFFFFF;
+    
+    opacity: 0.6;
+}
+.p2{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 35px;
+
+color: #FFFFFF;
+
+}
+.p3{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+.h13{
+    font-family: Roboto,Source Sans Pro,sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 56px;
+
+color: #02C873;
+
+}
+.h14{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+
+color: #484848;
+
+opacity: 0.8;
 }

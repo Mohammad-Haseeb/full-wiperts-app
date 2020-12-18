@@ -17,6 +17,9 @@ import FAQuestion from './Component/FAQ/FAQquestion';
 import QuestionMain from './Component/FAQ/FAQQuestionMain';
 import  Contact from './Component/Contact/Contact';
 import About from  './Component/About/About';
+import MainBlog from './Component/Blog/BlogMain';
+import  BlogReadPost from './Component/Blog/BlogRead';
+import Privacy from "./Component/Home/privacyResult";
 
 export default function App() {
   
@@ -25,10 +28,15 @@ export default function App() {
       
     <Routes>
       <Route path="/" element={<Home/>}/>
+      <Route path="/privacy" element={<Privacy/>}/>
+
+
       <Route path="FAQ" element={<MainFaQ/>}/>
       <Route path="FAQ/Question" element={<QuestionMain/>}/>
       <Route path="Contact" element={<Contact/>}/>
       <Route path="About" element={<About/>}/>
+      <Route path="Blog" element={<MainBlog/>}/>
+      <Route path="BlogRead" element={<BlogReadPost/>}/>
 
       <Route path="user" element={<MainLoginSystem />}>
          <Route path="login" element={<LoginForm/>} />

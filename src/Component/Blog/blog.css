@@ -1,0 +1,211 @@
+.secondBox{
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-wrap: wrap;
+}
+.secondBox >div{
+    padding-left: 5%;
+    padding-top: 20px;
+}
+.firstBox{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+.firstBoxPara p{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 35px;
+
+color: #484848;
+}
+.SecondBoxPara p{
+    font-family: Lato;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 17px;
+/* identical to box height */
+
+text-decoration-line: underline;
+
+
+color: #484848;
+}
+.firstBoxPara{
+    margin-left: 12%;
+}
+.SecondBoxPara{
+    margin-right: 10%;
+}
+
+.cardEyePara{
+    font-family: Lato;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+margin-top: 05px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #484848;
+}
+.lastBoxBlog{
+    display: flex;
+    justify-content: center;
+}
+.blogBloxFull{
+    width: 83%;
+    margin-bottom: 5%;
+    background: linear-gradient(78.33deg, #034770 5.81%, #0F74B0 86.83%);
+border-radius: 20px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.lastboxDescrip{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+margin-left: 15%;
+line-height: 30px;
+margin-top: 30px;
+/* or 150% */
+
+text-align: center;
+
+/* White-color */
+
+color: #FFFFFF;
+width: 698px;
+}
+.lastBoxEndDescript{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+width: 50%;
+/* White-color */
+margin-left: 23%;
+color: #FFFFFF;
+opacity: 0.6;
+}
+.lastBoxBlogBtn{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+background: #02C873 !important;
+width: 10%;
+height: 56px;
+align-self: center;
+margin-bottom:3% !important;
+border-radius: 6px;
+color: #FFFFFF;
+}
+.blogImageText{
+    margin-left: 40px;
+    padding-top: 0px;
+    background: #484848;
+    width: 37%;
+    text-align: center;
+    justify-content: center;
+border-radius: 4px;
+
+}
+.imgebtnTextForm{
+
+    font-family: Source Sans Pro !important;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+
+text-align: right;
+
+/* White-color */
+
+
+color: #FFFFFF !important;
+}
+.upperBoxBlog{
+    display: flex;
+    justify-content: center;
+
+}
+.upperImageSetting{
+    background-image: url("./BlogImage//upper.jpg");
+    margin-top:10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    border-radius: 20px;
+}
+.boxSettingInUpImage{
+    display: flex;
+    flex-direction: column;
+}
+.firstInnerofUpperImage{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.firstInnerofUpperImage div{
+    padding-left: 50px;
+     
+
+}
+p.feature{
+    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+/* identical to box height */
+
+
+/* White-color */
+
+color: #FFFFFF;
+}
+.upImgText{
+    font-family: Source Sans Pro;
+    width: 60%;
+    padding-left: 50px;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 38px;
+/* or 136% */
+
+
+/* White-color */
+
+color: #FFFFFF;
+}
+.uperImgBtn{
+  padding-left: 50px;
+  padding-bottom: 20px;
+}

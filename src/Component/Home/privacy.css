@@ -1,0 +1,64 @@
+.privacybgImage{
+    background-image: url("./images/HomePageImages/Start\ Privicy.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.privacyFirstBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.privacySecondHead{
+    font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+display: block;
+margin-top: -7px;
+color: #CCCCCC;
+}
+.mulish{
+    font-family: Mulish;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+/* White-color */
+
+color: #FFFFFF;
+opacity: 0.5;
+}
+.privacyinfoHead{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 35px;
+
+color: #FFFFFF;
+
+}
+.privacyResult{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+@media screen and (max-width:1199px){
+
+    .bnNewPrivacy{
+             margin-top: 40px !important;
+             margin-right:25% !important;
+    }
+}

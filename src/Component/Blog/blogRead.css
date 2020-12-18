@@ -1,0 +1,146 @@
+.firstImageReadPost{
+    background-image: url("./BlogImage/ReadPost.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   z-index: -1; 
+
+}
+p.postReadDes{
+    margin-left: 20%;
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+
+text-decoration-line: underline;
+
+/* White-color */
+padding-top: 02%;
+color: #FFFFFF;
+}
+.postReadHead{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 38px;
+/* identical to box height, or 136% */
+
+text-align: center;
+padding-bottom: 7%;
+
+/* White-color */
+
+color: #FFFFFF;
+}
+.ReadPostSection{
+    width: 80%;
+    
+    margin-top: -40px;
+    background: #FFFFFF;
+box-shadow: 0px 5px 10px rgba(11, 31, 132, 0.1);
+border-radius: 10px;
+    
+}
+.topButonReadPost{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+p.postRemoval{
+    background: #484848;
+border-radius: 4px;
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+padding-top: 05px;
+padding-left: 10px !important;
+padding-right: 10px !important;
+padding-bottom: 5px;
+text-align: right;
+
+/* White-color */
+
+color: #FFFFFF;
+}
+.dateRemoval{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 30px;
+/* or 214% */
+
+text-align: right;
+
+color: #484848;
+}
+.ReadHeading{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 23px;
+padding-left: 08%;
+}
+p.readingPostFirstPara{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+padding-left: 08%;
+padding-right: 09%;
+color: #000000;
+
+opacity: 0.54;
+}
+.nameSurname{
+    top: calc(50% - 24px/2 - 1px);
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+padding-right: 15px;
+letter-spacing: 0.1px;
+
+color: #484848;
+}
+p.cigrate{
+    top: calc(50% - 24px/2 - 1px);
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+padding-right: 30px;
+
+color: #000000;
+}
+p.Readshare{
+    font-family: Lato;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #484848;
+}

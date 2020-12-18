@@ -21,22 +21,28 @@ export default function NavHead(){
           </Link>
       </li>
       <li className="nav-item ">
-      <Link to="/FAQ" className="attach"><Button className="linkBtn" >FAQ</Button>
+      <Link to="/About" className="attach"><Button className="linkBtn" >About Us</Button>
           <span className="sr-only"></span>
           </Link>
       </li>
       <li className="nav-item ">
-      <Link to="/About" className="attach"><Button className="linkBtn" >About</Button>
+      <Link to="/Blog" className="attach"><Button className="linkBtn" >Blog</Button>
           <span className="sr-only"></span>
           </Link>
       </li>
+      <li className="nav-item ">
+      <Link to="/FAQ" className="attach"><Button className="linkBtn" >FAQ</Button>
+          <span className="sr-only"></span>
+          </Link>
+      </li>
+      
       <li className="nav-item ">
       <Link to="/Contact" className="attach"><Button className="linkBtn" >Contact</Button>
           <span className="sr-only"></span>
           </Link>
       </li>
       <li className="nav-item ">
-      <Link to="/user/login" className="attach"><Button className="linkBtn" >Log in</Button>
+      <Link  to="/user/login" className="attach"><Button  variant="outlined" style={{borderColor:"#FFFFFF",borderRadius:"20px",fontFamily:"Source Sans Pro",opacity:"0.7",color:"#FFFFFF"}}>Default</Button>
           <span className="sr-only"></span>
           </Link>
       </li>

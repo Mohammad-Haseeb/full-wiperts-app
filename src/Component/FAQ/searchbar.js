@@ -5,6 +5,7 @@ import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import './FAQ.css';
+import {  Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,11 +35,11 @@ export default function SearchBar() {
         placeholder="Ex. Security settings"
         inputProps={{ 'Source Sans Pro': 'search google maps' }}
       />
-      <IconButton type="submit" className={classes.iconButton} aria-label="search">
+     <Link to="/FAQ/Question"><IconButton type="submit" className={classes.iconButton} aria-label="search">
        <span style={{backgroundColor:"#02C873",height:"44px",width:"44px",borderRadius:"7px"}}>
         <SearchIcon />
        </span>
-      </IconButton>
+      </IconButton></Link> 
       
     </div>
   );

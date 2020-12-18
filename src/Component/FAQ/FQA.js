@@ -8,6 +8,8 @@ import general from './FAQImages/general.jpg';
 import  muchSign from './FAQImages/muchSign.jpg';
 import started from './FAQImages/started.jpg';
 import FAQFoot from './FAQFoot.js';
+import {  Link } from 'react-router-dom';
+
 
 export default function MainFaQ(){
     return(
